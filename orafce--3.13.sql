@@ -1791,6 +1791,8 @@ REVOKE ALL ON utl_file.utl_file_dir FROM PUBLIC;
 /* allow only read on utl_file.utl_file_dir to unprivileged users */
 GRANT SELECT ON TABLE utl_file.utl_file_dir TO PUBLIC;
 
+SELECT pg_catalog.pg_extension_config_dump('utl_file.utl_file_dir','');
+
 -- dbms_assert
 
 CREATE SCHEMA dbms_assert;
